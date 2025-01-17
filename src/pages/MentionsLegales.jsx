@@ -17,8 +17,8 @@ const MentionsLegales = () => {
                 <div className='mentions_content'>
                     <h3>2. Sources des données</h3>
                     <p><i className="fa-solid fa-star"></i> API Astronomy Picture of the Day (APOD) : Les images et informations affichées sur ce site proviennent de l'API officielle de la NASA. Pour en savoir plus : <a href="https://api.nasa.gov/" target='_blank' aria-label='lien vers Nasa.gov' rel="noopener noreferrer"> api.nasa.gov.</a></p>
-                    <p><i className="fa-solid fa-star"></i> Google Earth Engine : Les visualisations géographiques et données environnementales sont fournies par l'API Google Earth Engine. Détails disponibles sur <a href="https://earthengine.google.com/" target='_blank' aria-label='lien vers Nasa.gov' rel="noopener noreferrer"> earthengine.google.com.</a>
-                    </p>
+                    <p><i className="fa-solid fa-star"></i> API NASA Image and Video Library : Les images et vidéos affichées sur ce site proviennent de l'API officielle de la NASA. Pour en savoir plus : <a href="https://images.nasa.gov/" target='_blank' aria-label='lien vers la NASA Image and Video Library' rel="noopener noreferrer">images.nasa.gov</a>.</p>
+                    <p><i className="fa-solid fa-star"></i> API NASA Near Earth Object (NEO) : Les informations sur les astéroïdes proches de la Terre sont fournies par l'API officielle de la NASA. Pour en savoir plus : <a href="https://api.nasa.gov/" target='_blank' aria-label='lien API Near Earth Object' rel="noopener noreferrer">api.nasa.gov</a>.</p>
                 </div>
                 <img src="/space-tourism.png" className='illustrations'/>
                 <div className='mentions_content'>

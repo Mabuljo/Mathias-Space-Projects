@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import useNASAsearch from "../utils/FetchNASAsearch";
 import Card from '../components/Card';
-import Banner from '../components/Banner';
 
 const Rechercher = () => {
 
