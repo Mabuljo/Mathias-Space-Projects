@@ -1,8 +1,21 @@
-# React + Vite
+# Mathias 's Space Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description
+Projet personnel conçu pour explorer l'espace grâce aux API de la NASA. Développé avec React, Sass, et Vite, ce projet combine apprentissage technique et passion pour l'astronomie.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cloner le projet :
+git clone git@github.com:Mabuljo/Mathias-Space-Projects.git
+cd Mathias-Space-Projects/frontend
+
+Installer les dépendances :
+npm install
+Configurer l'environnement :
+Crée un fichier .env avec ta clé API :
+VITE_NASA_API_KEY=ta_cle_API_NASA
+
+Lancer le projet :
+npm run dev
+
+Auteur :
+Réalisé par Mabuljo dans le cadre d'un projet personnel.
