@@ -1,0 +1,15 @@
+@use "../layouts/mixin";
+
+.accueil {
+    .presentation {
+        padding: 20px 120px;
+        font-weight: 400;
+        text-align: center;
+        @media (max-width:768px){
+            padding: 20px;
+        }
+    }
+    .cards {
+        @include mixin.cards;
+    }
+}

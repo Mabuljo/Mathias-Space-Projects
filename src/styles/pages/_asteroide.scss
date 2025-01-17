@@ -1,0 +1,32 @@
+@use "../layouts/mixin";
+
+.asteroides {
+    @include mixin.displayFlex;
+
+    h2 {
+        @include mixin.subtitle-h3;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    &_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        box-sizing: border-box;
+        width: 100%;
+        @media (max-width: 1024px){
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width:768px){
+            grid-template-columns: 1fr;
+        }
+
+        .asteroid {
+            @include mixin.content;
+            gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@use "../layouts/variables";
+
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@mixin pulse-animation {
+    animation: pulse 2s infinite ease-in-out;
+  }
+
+@mixin spinner-animation {
+    animation: spinner 1s linear infinite;
+  }
+
+@mixin displayFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 120px;
+    gap: 50px;
+    @media (max-width:768px){
+        padding: 50px 20px;
+        gap: 30px;
+    }
+}
+
+@mixin subtitle-h2 {
+    font-size: 3.5rem;
+    font-weight:400;
+    @media (max-width: 1024px){
+        font-size: 3rem;
+    }
+    @media (max-width: 768px){
+        font-size: 2rem;
+    }
+}
+
+@mixin subtitle-h3 {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid variables.$secondary-color;
+}
+
+@mixin img-png {
+    width: 200px;
+    margin: 0 auto;
+    @media (max-width:768px){
+        width: 100px;
+    }
+}
+
+@mixin content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+@mixin cards {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    justify-content: center; 
+    border-radius: 10px;
+    padding: 20px 120px;
+    gap: 50px;
+    box-sizing: border-box;
+    @media (max-width: 1024px){
+        margin:50px 20px;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    @media (max-width:768px){
+        padding: 0;
+    }
+}

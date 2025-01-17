@@ -1,0 +1,60 @@
+@use "./pages/intro";
+@use "./pages/accueil";
+@use "./pages/mentions-legales";
+@use "./pages/a-propos";
+@use "./pages/error";
+@use "./pages/rechercher";
+@use "./pages/asteroide";
+@use "./layouts/variables";
+@use "./layouts/mixin";
+@use "./layouts/header";
+@use "./layouts/footer";
+@use "./components/banner";
+@use "./components/card";
+
+
+
+
+// Général
+html, body, #root {
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Orbitron';
+}
+
+body {
+    color: variables.$main-color;
+    background-color: variables.$background-color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+a {
+    text-decoration: none;
+    color: variables.$main-color;
+    &:visited {
+        color: variables.$main-color;
+    }
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight:400;
+    padding: 0 10px;
+    margin: 0;
+    @media (max-width: 1024px){
+        font-size: 3rem;
+    }
+    @media (max-width: 768px){
+        font-size: 2.5rem;
+    }
+}
+
+span {
+    font-size: 0.9rem;
+}

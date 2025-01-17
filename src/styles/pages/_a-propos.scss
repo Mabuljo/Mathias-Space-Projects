@@ -1,0 +1,18 @@
+@use "../layouts/mixin";
+.a-propos {
+    @include mixin.displayFlex;
+    align-items: start;
+    h2 {
+        @include mixin.subtitle-h2;
+    }
+
+    h3 {
+        @include mixin.subtitle-h3;
+    }
+    .illustrations {
+        @include mixin.img-png;
+    }
+    &_content {
+        @include mixin.content;
+    }    
+}

@@ -1,0 +1,68 @@
+@use "../layouts/mixin";
+@use "../layouts/variables";
+
+.rechercher-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.rechercher {
+
+    @include mixin.displayFlex;
+    
+    
+    .subtitle {
+        @include mixin.subtitle-h2;
+    }
+
+   &_content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        @media (max-width:768px){
+            flex-direction: column;
+        }   
+    }
+
+    .search_bar {
+        display: flex;
+        .search_text {
+            width: 100%;
+            color: variables.$background-color;
+            font-family: 'Orbitron' ;
+            border: none;
+            border-radius: 10px 0 0 10px;
+            text-align: start;
+            padding-left: 10px;
+            font-size: 1rem;
+        }
+        .search_icon {
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+            border: none;
+            @media (max-width:768px){
+                display: flex;
+                align-items: stretch;
+            }
+        }
+        .fa-magnifying-glass {
+            color: variables.$background-color; 
+            font-size: 1.2rem;
+           
+        }
+    }
+
+    .fa-spinner {
+        color: variables.$main-color;
+        padding: 0;
+        @include mixin.spinner-animation();
+    }
+
+    .api-results {
+        width: 100%;
+        @include mixin.cards;
+    }
+}

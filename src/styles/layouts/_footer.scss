@@ -1,0 +1,40 @@
+footer {
+    background-image:url('/footer2.webp');
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    @media (max-width:768px){
+        padding: 30px;
+        align-items: start;
+    }
+    .reseaux {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        .icones {
+            font-size: 2rem;
+            transition: 0.2s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .credits, .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media (max-width:768px){
+            align-items: start;
+            font-size: 0.8rem;
+        }
+    }
+}
