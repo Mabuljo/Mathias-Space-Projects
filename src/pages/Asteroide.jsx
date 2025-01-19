@@ -15,10 +15,10 @@ const Asteroide = () => {
             const API_KEY = import.meta.env.VITE_API_KEY;
 
             // Vérifier si les données du jour sont déjà en cache
-            const cachedData = localStorage.getItem(`asteroids_${today}`);
-            if (cachedData) {
+            const cachedAsteroidData = sessionStorage.getItem(`asteroids_${today}`);
+            if (cachedAsteroidData) {
                 // Charger les données du cache
-                setAsteroides(JSON.parse(cachedData));
+                setAsteroides(JSON.parse(cachedAsteroidData));
                 setLoading(false);
                 return; // Ne pas faire d'appel API
             }
@@ -31,7 +31,7 @@ const Asteroide = () => {
                 setAsteroides(data);
 
                 // Sauvegarder les données dans le cache
-                localStorage.setItem(`asteroids_${today}`, JSON.stringify(data));
+                sessionStorage.setItem(`asteroids_${today}`, JSON.stringify(data));
                 
             } catch (error){
                 setError(`Erreur lors du chargement des données: ${error.message}`)

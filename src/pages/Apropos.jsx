@@ -18,10 +18,10 @@ const Apropos = () => {
                 <div className='a-propos_content'>
                     <h3>Technologies utilisées</h3>
                     <p>Ce site a été conçu avec les technologies suivantes :</p>
-                    <p><i class="fa-solid fa-star"></i> React pour une interface interactive et fluide.</p>
-                    <p><i class="fa-solid fa-star"></i> SASS pour un design moderne et personnalisé.</p>
-                    <p><i class="fa-solid fa-star"></i> Vite pour un développement rapide et efficace.</p>
-                    <p><i class="fa-solid fa-star"></i> Les APIs de la NASA pour intégrer des images de l'astronomie et des informations fascinantes.</p>
+                    <p><i className="fa-solid fa-star"></i> React pour une interface interactive et fluide.</p>
+                    <p><i className="fa-solid fa-star"></i> SASS pour un design moderne et personnalisé.</p>
+                    <p><i className="fa-solid fa-star"></i> Vite pour un développement rapide et efficace.</p>
+                    <p><i className="fa-solid fa-star"></i> Les APIs de la NASA pour intégrer des images de l'astronomie et des informations fascinantes.</p>
                 </div>
             </main>
             <Footer />
