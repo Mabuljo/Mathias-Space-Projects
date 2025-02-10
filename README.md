@@ -10,7 +10,7 @@ git clone git@github.com:Mabuljo/Mathias-Space-Projects.git
 Installer les dépendances :
 npm install
 
-Crée un fichier .env avec ta clé API :
+Créer un fichier .env avec la clé API :
 VITE_NASA_API_KEY=ta_cle_API_NASA
 
 Lancer le projet :
