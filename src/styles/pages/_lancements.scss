@@ -1,0 +1,5 @@
+@use "../layouts/mixin";
+
+.lancements {
+    @include mixin.cards;
+}

@@ -19,6 +19,7 @@ const MentionsLegales = () => {
                     <p><i className="fa-solid fa-star"></i> API Astronomy Picture of the Day (APOD) : Les images et informations affichées sur ce site proviennent de l'API officielle de la NASA. Pour en savoir plus : <a href="https://api.nasa.gov/" target='_blank' aria-label='lien vers Nasa.gov' rel="noopener noreferrer"> api.nasa.gov.</a></p>
                     <p><i className="fa-solid fa-star"></i> API NASA Image and Video Library : Les images et vidéos affichées sur ce site proviennent de l'API officielle de la NASA. Pour en savoir plus : <a href="https://images.nasa.gov/" target='_blank' aria-label='lien vers la NASA Image and Video Library' rel="noopener noreferrer">images.nasa.gov</a>.</p>
                     <p><i className="fa-solid fa-star"></i> API NASA Near Earth Object (NEO) : Les informations sur les astéroïdes proches de la Terre sont fournies par l'API officielle de la NASA. Pour en savoir plus : <a href="https://api.nasa.gov/" target='_blank' aria-label='lien API Near Earth Object' rel="noopener noreferrer">api.nasa.gov</a>.</p>
+                    <p><i className="fa-solid fa-star"></i> API SpaceDevs : Les informations sur les prochains lancements spatiaux proviennent de l'API SpaceDevs. Pour en savoir plus : <a href="https://thespacedevs.com/" target='_blank' aria-label='lien vers SpaceDevs' rel="noopener noreferrer">thespacedevs.com</a>.</p>
                 </div>
                 <img src="/space-tourism.png" className='illustrations'/>
                 <div className='mentions_content'>

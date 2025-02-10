@@ -22,6 +22,7 @@ const Apropos = () => {
                     <p><i className="fa-solid fa-star"></i> SASS pour un design moderne et personnalisé.</p>
                     <p><i className="fa-solid fa-star"></i> Vite pour un développement rapide et efficace.</p>
                     <p><i className="fa-solid fa-star"></i> Les APIs de la NASA pour intégrer des images de l'astronomie et des informations fascinantes.</p>
+                    <p><i className="fa-solid fa-star"></i> L'API des SpaceDevs pour pour obtenir des informations en temps réel sur les prochains lancements spatiaux.</p>
                 </div>
             </main>
             <Footer />

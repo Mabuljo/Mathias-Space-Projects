@@ -1,0 +1,26 @@
+@use "../layouts/mixin";
+@use "../layouts/variables";
+
+.card-launch {
+    .img-launch {
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 350px;
+        border: 1px solid variables.$secondary-color;
+        @media (max-width:768px){
+            height: 250px;
+        }
+    }
+    .launch {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    h2 {
+        padding-bottom: 20px;
+    }
+    p {
+        padding-bottom: 10px;
+    }
+}

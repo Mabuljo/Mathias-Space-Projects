@@ -30,9 +30,9 @@ const Rechercher = () => {
                     <span className='search_info'>Entrez un terme en anglais</span>
                 </div>
                 <h3>Résultats :</h3>
-                        {loading && <p><i className="fa-solid fa-spinner"></i> Chargement...</p>}
-                        {error && <p>{error}</p>}
-                        {query && results.length === 0 && !loading && !error && <p>Aucun résultat trouvé pour votre recherche.</p>}
+                    {loading && <p><i className="fa-solid fa-spinner"></i> Chargement...</p>}
+                    {error && <p>{error}</p>}
+                    {query && results.length === 0 && !loading && !error && <p>Aucun résultat trouvé pour votre recherche.</p>}
                         <div className='api-results'>
                         {results.map((item) => (
                             <Card key={item.data[0]?.nasa_id} 

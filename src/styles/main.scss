@@ -5,14 +5,14 @@
 @use "./pages/error";
 @use "./pages/rechercher";
 @use "./pages/asteroide";
+@use "./pages/lancements";
 @use "./layouts/variables";
 @use "./layouts/mixin";
 @use "./layouts/header";
 @use "./layouts/footer";
 @use "./components/banner";
 @use "./components/card";
-
-
+@use "./components/launch";
 
 
 // Général

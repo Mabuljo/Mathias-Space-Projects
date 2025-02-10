@@ -7,6 +7,7 @@ import Apropos from './pages/Apropos';
 import Error from './pages/Error';
 import Rechercher from './pages/Rechercher';
 import Asteroide from './pages/Asteroide';
+import Lancements from './pages/Lancements';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/a-propos' element={<Apropos />}/>
         <Route path='/rechercher' element={<Rechercher />}/>
         <Route path='/asteroides' element={<Asteroide />}/>
+        <Route path='/lancements' element={<Lancements />}/>
         <Route path='*' element={<Error />}/>
       </Routes>
     </BrowserRouter>
