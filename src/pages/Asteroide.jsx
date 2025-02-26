@@ -60,6 +60,7 @@ const Asteroide = () => {
                         <h2>Nom: {asteroid.name}</h2>
                         <p><i className="fa-solid fa-star"></i> Diamètre estimé : {asteroid.estimated_diameter.meters.estimated_diameter_min.toFixed(2)} m</p>
                         <p><i className="fa-solid fa-star"></i> Dangerosité : {asteroid.is_potentially_hazardous_asteroid ? "Oui" : "Non"}</p>
+                        <p><i className="fa-solid fa-star"></i> Distance en km : {parseFloat(asteroid.close_approach_data[0].miss_distance.kilometers).toFixed(0)} km</p>
                         <p><i className="fa-solid fa-star"></i> Distance :  {(parseFloat(asteroid.close_approach_data[0].miss_distance.kilometers)/25902068371,2).toFixed(0)} jour/lumière</p>
                         <p><i className="fa-solid fa-star"></i> Vitesse :{parseFloat(asteroid.close_approach_data[0].relative_velocity.kilometers_per_hour).toFixed(2)} km/h</p>
                         <p><i className="fa-solid fa-star"></i>Temps approximatif de collision : {(parseFloat(asteroid.close_approach_data[0].miss_distance.kilometers)/ parseFloat(asteroid.close_approach_data[0].relative_velocity.kilometers_per_hour)/24).toFixed(2)} jours</p>
